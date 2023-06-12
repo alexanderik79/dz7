@@ -6,7 +6,6 @@ public class ArrayValueCalculator {
         int j = 0;
         int sizeOfArray = Stream.of(array).mapToInt(m -> m.length).sum();
             if (sizeOfArray!=16) throw new ArraySizeException("wrong size of array");
-
         try {
             for (i = 0; i < 4; i++) {
                 for (j = 0; j < 4; j++) {
